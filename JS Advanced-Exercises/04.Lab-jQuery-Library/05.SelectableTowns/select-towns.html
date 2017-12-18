@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Select Towns</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="select-towns.js"></script>
+    <style>
+        li {
+            display: inline-block;
+            cursor: pointer;
+            padding: 10px;
+        }
+        
+        ul {
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Towns</h1>
+    <ul id="items">
+        <li>Sofia</li>
+        <li>Varna</li>
+        <li>Plovdiv</li>
+        <li>Bourgas</li>
+        <li>Rousse</li>
+    </ul>
+    <button id="showTownsButton">Show Towns</button>
+    <div id="selectedTowns"></div>
+    <script>
+        $(attachEvents())
+    </script>
+</body>
+
+</html>

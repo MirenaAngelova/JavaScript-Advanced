@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>List Items: Up / Down</title>
+    <style>
+        button {
+            margin: 3px 0 3px 8px
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="main"></div>
+    <script src="list-builder.js"></script>
+    <script>
+        $(function() {
+            let builder = listBuilder("#main");
+            builder.createNewList();
+            builder.addItem("Sofia");
+            builder.addItem("Varna");
+            builder.addItem("Sofia <new>");
+            builder.addItem("Pleven");
+        });
+    </script>
+</body>
+
+</html>
